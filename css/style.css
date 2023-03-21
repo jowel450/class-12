@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --pramiryfont: 'Open Sans', sans-serif;
+    --secondfonts: 'Roboto', sans-serif;
+    --thirdfonts: 'Raleway', sans-serif;
+    --pramirycolor: #444444;
+    --secondcolor: #de4644;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* COMMON CSS START  */
+
+.contaner{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* COMMON CSS ENDS  */
+
+/* HEADER START HERE  */
+
+#buy{
+    background-color: var(--pramirycolor);
+    font-family: var(--pramiryfont);
+
+}
+#buy ul li{
+    display: inline-block;
+    border-right: 1px solid #fff;
+    padding: 19px 21px;
+}
+#buy ul li:last-child{
+    border: none;
+}
+#buy .head_left{
+    width: 50%;
+}
+#buy .head_right{
+    width: 50%;
+    text-align: right;
+}
+#buy ul li select{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+#buy ul li a{
+    color: #fff;
+}
+#ebuy_nev .logo{
+    width: 40%;
+}
+#ebuy_nev .menu{
+    width: 50%;
+}
+#ebuy_nev .row{
+    align-items: center;
+}
+#ebuy_nev .menu ul li{
+    display: inline-block;
+    background-color: blac;
+}
+#ebuy_nev .menu ul li a{
+    padding: 38px 10px;
+    display: inline-block;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.4s;
+}
+#ebuy_nev .menu ul li a:hover{
+    color: #de4644;
+}
+#ebuy_nev .menu ul li a::after{
+    content: "";
+    width: 84%;
+    height: 3px;
+    left: 9px;
+    bottom: 34px;
+    background-color: #de4644;
+    position: absolute;
+    transition: 0.4s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#ebuy_nev .menu ul li a::before{
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 9px;
+    bottom: 28px;
+    background-color: #de4644;
+    position: absolute;
+    transition: 0.4s;
+}
+#ebuy_nev .menu ul li a:hover::before{
+    width: 54%;
+}
+#ebuy_nev .menu ul li a:hover::after{
+    width: 84%;
+    transform: scaleX(1);
+}
+#ebuy_nev .icon_menu{
+    width: 10%;
+    text-align: right;
+}
+#ebuy_nev .search_icon{
+    display: inline-block;
+}
+.item_bag{
+    display: inline-block;
+    margin-left: 30px;
+}
+/* HEADER ENDS HERE  */
+
+/* BANNER START HERE */
+
+#banner{
+    background: url(../img/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0000009c;
+    background-blend-mode: multiply;
+    padding-top: 100px;
+}
+#banner .banner_item h3{
+    font-size: 70px;
+    font-weight: 800;
+    color: #de4644;
+    letter-spacing: 5px;
+    font-family: var(--pramiryfont);
+}
+#banner .banner_item h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--secondfonts);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#banner .banner_item p{
+    width: 461px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondfonts);
+    color: #f1f1f1;
+    line-height: 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#banner .low{
+    display: fle;
+    flex-wrap: wra;
+    display: inline-block;
+}
+#banner .low button{
+    background: transparent;
+    border: none;
+}
+#banner .low a{
+    display: inline-block;
+    padding: 19px 19px;
+    border: 1px solid #Fff;
+    background: none;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#banner .low a:hover{
+    background-color: #de4644;
+    border: none;
+    transition: 0.5s;
+}
+#banner .main{
+    margin-left: 30px;
+}
+.banner_icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+#banner .banner_iconr_right{
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding-top: 3px;
+    transition: 0.4s;
+}
+#banner .banner_iconr_right:hover,
+#banner .banner_iconr_left:hover{
+    border: none;
+    background-color: #de4644;
+}
+#banner .banner_iconr_left{
+    border: 1px solid #fff;
+    width: 35px;
+    margin-right: 10px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding-top: 3px;
+}
+#banner .fa-solid{
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+
+}
+/* BANNER ENDS HERE */
+
+/* BANNER DOWN START HERE */
+
+#free_sopping{
+    background: #f1f1f1;
+}
+#free_sopping .banner_card{
+    width: 33.33%;
+    padding: 32px 0;
+    border-right: 1px solid #dddddd;
+}
+#free_sopping .banner_card:last-child{
+    border: none;
+}
+#free_sopping .banner_card_item{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--secondfonts);
+    color: #222222;
+}
+#free_sopping .banner_card_p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--pramiryfont);
+    color: #444444;
+}
+#free_sopping .banner_card .fa-sharp{
+    color: #444444;
+    font-size: 30px;
+    margin-right: 5px;
+    text-align: center;
+}
+/* BANNER DOWN ENDS HERE */
+
+/* MAN SHIRT START HERE */
+
+#men_shirt .mens_card{
+    width: 33.33%;
+    position: relative;
+    margin: 80px 0;
+}
+#men_shirt .mens_photo img{
+     width: 80%; 
+    object-fit: cover;
+}
+#men_shirt .mens_card .overly{
+    content: '';
+    position: absolute;
+    width: 62%;
+    height: 40%;
+    left: 0;
+    bottom: 0;
+    background-color: #f7f1f170;
+    background-blend-mode: multiply;
+    transform: scale(1);
+    margin: 30px;
+    transform: scale(0);
+    transition: 0.4s;
+    
+}
+#men_shirt .mens_card .hover:hover .overly{
+    transform: scale(1);
+}
+#men_shirt .mens_card .overly .overlay_item{
+    text-align: center;
+
+}
+#men_shirt .mens_card .overly .overlay_item h3{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #232222;
+    padding: 5px 0;
+}
+#men_shirt .mens_card .overly .overlay_item h5{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--thirdfonts);
+    color: #fff;
+}
+#men_shirt .mens_card .overly .mens_ancor{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5px;
+}
+#men_shirt .mens_card .overly .mens_ancor a{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #Ffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    transition: 0.4s;
+    display: inline-block;
+}
+#men_shirt .mens_card .overly .mens_ancor:hover a{
+    background: #de4644;
+    border: none;
+    transition: 0.4s;
+}
+#men_shirt .all_head{
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+#men_shirt .all_head p{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #222222;
+}
+#men_shirt .all_head::after{
+    position: absolute;
+    content: '';
+    width: 19%;
+    height: 1px;
+    left: 414px;
+    bottom: -14px;
+    background-color: #de4644;
+}
+#men_shirt .all_head::before{
+    position: absolute;
+    content: '';
+    width: 11%;
+    height: 2px;
+    left: 414px;
+    bottom: -21px;
+    background-color: #de4644;
+}
+#men_shirt .all_broth_list{
+    text-align: center;
+    
+}
+#men_shirt .all_broth_list .all_women{
+    display: inline-block;
+    border-right: 2px solid #444444;
+    margin-bottom: 30px;
+}
+#men_shirt .all_broth_list .all_women a{
+    padding:  0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #444444;
+    transition: 0.4s;
+}
+#men_shirt .all_broth_list .all_women a:hover{
+    /* background-color: #de4644; */
+    color: #de4644;
+}
+#men_shirt .all_broth_list .all_women:last-child{
+    border: none;
+}
+#men_shirt .women_photo{
+    width: 25%;
+    position: relative;
+}
+#men_shirt .women_cnt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #222222;
+}
+#men_shirt .women_cnt span{
+    margin-right: 20px;
+}
+.women_photo .star{
+    display: inline-block;
+}
+#men_shirt .women_photo .star .fa-solid{
+    font-size: 14px;
+    color: var(--secondcolor);
+}
+#men_shirt .women_photo .women_overlay{
+    position: absolute;
+    width: 0;
+    height: 350px;
+    background-color: #00000086;
+    right: 23px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+#men_shirt .women_photo:hover .women_overlay{
+    width: 40%;
+    opacity: 1;
+    visibility: visible;
+    transform-origin: right;
+}
+#men_shirt .women_photo .women_overlay .icon_overlay{
+    text-align: center;
+    margin: 40px auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+}
+#men_shirt .women_photo .women_overlay .icon_overlay:hover{
+    background: var(--secondcolor);
+    border: none;
+}
+#men_shirt .women_photo .women_overlay .icon_overlay:first-child{
+    margin-top: 60px;
+}
+/* MAN SHIRT ENDS HERE */
+
+/* MICROSOFT START HERE */
+#microsoft{
+    background-color: #f1f1f1;
+    margin: 50PX 0;
+}
+#microsoft .microsoft_item{
+    width: 50%;
+}
+#microsoft .microsoft_pht{
+    padding: 40PX 0;
+}
+.microsoft_cnt{
+    width: 50%;
+    padding: 40px 0;
+}
+#microsoft .microsoft_cnt h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #222222;
+    text-transform: uppercase;
+}
+#microsoft .microsoft_cnt h2{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: var(--secondcolor);
+    text-transform: uppercase;
+}
+#microsoft .microsoft_cnt p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--pramiryfont);
+    color: var(--pramirycolor);
+    padding: 20px 0;
+    line-height: 25px;
+}
+#microsoft .microsoft_cnt .delivery_time span{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #444444;
+    line-height: 30px;
+}
+#microsoft .microsoft_cnt .delivery_time{
+    width: 65px;
+    height: 65px;
+    border: 2px solid #222222;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#men_shirt .icon_women_last{
+    text-align: center;
+    margin: 30px 0;
+}
+#men_shirt .icon_women_last .women_right{
+    display: inline-block;
+    margin-right: 10px;
+}
+#men_shirt .icon_women_last a{
+    border: 1px solid #222222;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    color: #222222;
+    font-size: 20px;
+    transition: 0.4s;
+}
+#men_shirt .icon_women_last a:hover{
+    border: none;
+    background: var(--secondcolor);
+    color: #fff;
+}
+#men_shirt .icon_women_last .women_left{
+    display: inline-block;
+}
+#men_shirt .head_products{
+        text-align: center;
+        position: relative;
+        margin-bottom: 70px;
+        margin: 80px 0;
+}
+#men_shirt .head_products p{
+        font-size: 40px;
+        font-weight: 500;
+        font-family: var(--thirdfonts);
+        color: #222222;
+}
+#men_shirt .head_products::after{
+        position: absolute;
+        content: '';
+        width: 10%;
+        height: 1px;
+        left: 488px;
+        bottom: -14px;
+        background-color: #de4644;
+}
+#men_shirt .head_products::before{
+        position: absolute;
+        content: '';
+        width: 6%;
+        height: 2px;
+        left: 488px;
+        bottom: -21px;
+        background-color: #de4644;
+}
+/* MICROSOFT ENDS HERE */
+
+/* TESTMONIAL START HERE */
+
+#testmonial{
+    background: url(../img/testmonial_banner.jpg);
+    /* height: 400px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000c1;
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+#testmonial .testmonial_card{
+    width: 50%;
+    margin: 50px 0;
+}
+#testmonial .testmonial_card .testmonial_photo{
+    width: 30%;
+
+}
+#testmonial .testmonial_card .testmonial_cnt{
+    width: 70%;
+    color: #fff;
+    padding-right: 20px;
+}
+#testmonial .testmonial_card .testmonial_cnt h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #fff;
+}
+#testmonial .testmonial_card .testmonial_cnt h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #fff;
+
+}
+#testmonial .testmonial_card .testmonial_cnt p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--pramiryfont);
+    color: #dddddd;
+    padding: 30px 0;
+    line-height: 25px;
+    text-align: justify;
+}
+#testmonial .testmonial_card .testmonial_cnt h6{
+    font-size: 16px;
+    font-family: var(--thirdfonts);
+    text-align: right;
+    color: #efe8e8;
+}
+#testmonial .testmonial_card .testmonial_photo img{
+    border-radius: 50%;
+}
+#testmonial .testmonial_ancor{
+    text-align: center;
+    padding-bottom: 30px;
+}
+#testmonial .testmonial_ancor_left{
+    display: inline-block;
+    margin-right: 10px;
+}
+#testmonial .testmonial_ancor_left a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ffff;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.4s;
+}
+#testmonial .testmonial_ancor_left a:hover{
+    background: var(--secondcolor);
+    border: var(--secondcolor);
+}
+
+/* TESTMONIAL ENDS HERE */
+
+/* OUR BLOGS START HERE */
+
+#our_blogs .blogs_head{
+    text-align: center;
+}
+#our_blogs .blogs_head{
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+    margin: 80px 0;
+}
+#our_blogs .blogs_head p{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #222222;
+}
+#our_blogs .blogs_head::after{
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 1px;
+    left: 488px;
+    bottom: -14px;
+    background-color: #de4644;
+}
+#our_blogs .blogs_head::before{
+    position: absolute;
+    content: '';
+    width: 6%;
+    height: 2px;
+    left: 488px;
+    bottom: -21px;
+    background-color: #de4644;
+}
+#our_blogs .blogs_card{
+    width: 33.33%;
+    position: relative;
+}
+#our_blogs .blogs_card h5{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--thirdfonts);
+    color: #222222;
+    padding: 10px 0;
+}
+#our_blogs .blogs_card p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--pramiryfont);
+    color: #444444;
+    padding: 15px 0;
+    line-height: 25px;
+}
+#our_blogs .blogs_card a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--pramiryfont);
+    color: #222222;
+}
+#our_blogs .blogs_car{
+    font-size: 16px;
+    color: #222222;
+    margin-left: 5px;
+}
+#our_blogs .blogs_card .blogs_overlay{
+    position: absolute;
+    background-color: #000000ab;
+    width: 370px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+#our_blogs .blogs_card .blogs_overlay .admin{
+    display: inline-block;
+    padding-top: 260px;
+    /* justify-content: center; */
+}
+#our_blogs .blogs_card .blogs_overlay .admin p{
+    color: #fff;
+    padding: 0 10px;
+    
+}
+/* OUR BLOGS ENDS HERE */
